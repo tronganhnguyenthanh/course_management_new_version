@@ -1,0 +1,19 @@
+{
+  "name":"coursesapi",
+  "version":"1.0.0",
+  "description":"This is a courses restful API",
+  "main":"server.js",
+  "scripts":{
+    "server":"nodemon server.js"
+  },
+  "keywords":["Mongo", "ExpressJS"],
+  "author":"Trong Anh",
+  "license":"ISC",
+  "dependencies":{
+    "cors":"^2.8.5",
+    "dotenv":"^16.4.5",
+    "express":"^4.19.2",
+    "mongoose":"^8.2.4",
+    "nodemon":"^3.1.0"
+  }
+}
