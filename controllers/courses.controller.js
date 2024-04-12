@@ -55,10 +55,21 @@ const deleteCourseById = async (req, res) => {
   }
 }
 
+const editCourseById = async (req, res) => {
+  try{
+    let {_id} = req.params
+    let editCourse = await coursesModel.findById({_id})
+    res.json(editCourse)
+  }catch(error){
+    res.status(400).json({message:error})  
+  }
+}
+
 module.exports = {
  addNewCourse,
  getListCourse,
  updateCourse,
  filterCourseByTitle,
- deleteCourseById
+ deleteCourseById,
+ editCourseById
 }

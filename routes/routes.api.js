@@ -6,4 +6,5 @@ routerApi.get("/courses/list", courseController.getListCourse)
 routerApi.get("/course", courseController.filterCourseByTitle)
 routerApi.put("/course/update/:_id", courseController.updateCourse)
 routerApi.delete("/course/delete/:_id", courseController.deleteCourseById)
+routerApi.get("/course/edit/:_id", courseController.editCourseById)
 module.exports = routerApi
