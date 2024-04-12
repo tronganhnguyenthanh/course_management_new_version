@@ -6,7 +6,7 @@ const addNewCourse = async (req, res) => {
    let courses = new coursesModel({
      thumbnail:req.body.thumbnail,
      title:req.body.title,
-     description:req.body.description  
+     video:req.body.video
    })
    await courses.save()
    res.json(courses)

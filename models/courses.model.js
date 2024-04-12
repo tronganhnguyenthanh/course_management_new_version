@@ -6,7 +6,7 @@ const coursesSchema = new mongoose.Schema({
   title:{
    type:String
   },
-  description:{
+  video:{
    type:String
   }
 },{
